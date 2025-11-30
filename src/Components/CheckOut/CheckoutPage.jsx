@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useCart } from "../Cart/CartContext";
 import { useNavigate } from "react-router-dom";
+import { toast,ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const CheckoutPage = () => {
   const { cart, clearCart } = useCart();
@@ -29,13 +31,17 @@ const CheckoutPage = () => {
       !address.city ||
       !address.pincode
     ) {
-      alert("Please fill all address details");
+      toast.error("Please fill all address details");
       return;
     }
 
     clearCart();
-    alert("Order Placed Successfully!");
-    navigate("/");
+    toast.success("Order Placed Successfully!");
+    
+
+   setTimeout(() => {
+    navigate("/order-success");
+  }, 1200);
   };
 
   return (

@@ -22,6 +22,7 @@ import "react-toastify/dist/ReactToastify.css";
 import NotFound from './Components/NotFound';
 import { useState, useEffect } from 'react';
 import Loader from './Components/Loader';
+import OrderSuccess from './Components/CheckOut/OrderSuccess';
 
 
 
@@ -63,7 +64,9 @@ const App = () => {
               <Route path="/wishlist" element={<WishlistPage />} />
               <Route path="/checkout" element={<CheckoutPage />} />
               <Route path="/AuthPage" element={<AuthPage />} />
+              <Route path="/order-success" element={<OrderSuccess />} />
               <Route path="*" element={<NotFound />} />
+
 
             </Routes>
           </div>
