@@ -49,7 +49,7 @@ const NewArrivals = () => {
           <h2 className="text-2xl sm:text-2xl md:text-4xl max-md:text-2xl font-bold tracking-wide md:ms-25">
             NEW ARRIVAL
           </h2>
-          <button className="border md:me-24 border-gray-300 text-white px-4 sm:px-5 py-1 sm:py-2 max-md:py-[8px] rounded-full hover:bg-white hover:text-black transition text-sm sm:text-base"
+          <button className="border md:me-24 border-gray-300 text-white px-4 sm:px-5 py-1 sm:py-2 `max-md:py-[8px]` rounded-full hover:bg-white hover:text-black transition text-sm sm:text-base"
           onClick={()=> navigate('/products')}
           >
             View More
