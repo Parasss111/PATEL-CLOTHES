@@ -14,7 +14,7 @@ const ProductsPage = () => {
     return <h1 className="text-center mt-20 text-2xl font-bold">Category Not Found</h1>;
 
   return (
-    <section className="px-6 md:px-20 mt-35 mb-20">
+    <section className="px-6 md:px-20 mt-35 max-md:mt-25 max-md:mb-15 mb-20">
       <h1 className="text-3xl font-bold mb-3">{data.title}</h1>
       <p className="text-gray-600 mb-6">{data.subtitle}</p>
 

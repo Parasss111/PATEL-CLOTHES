@@ -41,15 +41,15 @@ const NewArrivals = () => {
   ];
 
   return (
-    <section className="max-w-[1480px] mx-auto px-4 py-14 bg-[#2d2d2d] rounded-3xl text-white mt-16">
+    <section className="max-w-[1480px] mx-auto max-md:mt-5 px-4 py-14 max-md:py-12 bg-[#2d2d2d] rounded-3xl text-white mt-12">
       {/* Header Section */}
       <div className="mb-8">
         {/* Title and Button in same row */}
         <div className="flex justify-between items-center">
-          <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold tracking-wide md:ms-25">
+          <h2 className="text-2xl sm:text-2xl md:text-4xl max-md:text-2xl font-bold tracking-wide md:ms-25">
             NEW ARRIVAL
           </h2>
-          <button className="border md:me-24 border-gray-300 text-white px-4 sm:px-5 py-1 sm:py-2 rounded-full hover:bg-white hover:text-black transition text-sm sm:text-base"
+          <button className="border md:me-24 border-gray-300 text-white px-4 sm:px-5 py-1 sm:py-2 max-md:py-[8px] rounded-full hover:bg-white hover:text-black transition text-sm sm:text-base"
           onClick={()=> navigate('/products')}
           >
             View More

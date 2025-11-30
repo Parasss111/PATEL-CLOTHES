@@ -45,7 +45,7 @@ const OurProduct = () => {
   ];
 
   return (
-    <section className="max-w-[1200px] mx-auto mt-18 px-4 py-12">
+    <section className="max-w-[1200px] mx-auto mt-12 max-md:mt-5 px-4 py-12">
       {/* Title */}
       <h2 className="text-3xl md:text-4xl font-extrabold text-start mb-6 font-sans tracking-wide">
         OUR PRODUCT

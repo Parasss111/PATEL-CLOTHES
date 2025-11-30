@@ -21,7 +21,7 @@ import p16 from "../../assets/p16.jpg";
 
 export const productCategories = {
   trendingTshirts: {
-    title: "Trending Design T-shirt",
+    title: "Trending T-shirt",
     subtitle: "Bold style, modern comfort—your go-to T-shirt for every vibe.",
     products: [
       { id: 101, name: "Full Neck T-shirt", price: 699, image: p1, sizes: ["M","L","XL"], type: "Full Neck", category: "trendingTshirts" },

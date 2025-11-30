@@ -68,15 +68,15 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-transparent py-2 z-50 font-[Nunito]">
-      <div className="max-w-[ 100%] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[ 100%] mx-auto px-2 max-md:px-1 lg:px-6">
         <div className="navbar-container bg-white rounded-full shadow-lg p-1 sm:p-1.5 flex items-center justify-between relative overflow-hidden">
           {/* Logo */}
           <div className="navbar-logo flex items-center space-x-1">
             <Link to="/" className="flex flex-col items-start leading-none p-1">
-              <span className="sm:text-xl text-lg font-serif font-bold tracking-widest text-black">
+              <span className="max-md:text-[30px] text-lg font-serif font-semibold tracking-wider text-black">
                 PATEL
               </span>
-              <span className="text-[8px] sm:text-[10px] text-gray-600 uppercase -mt-1">
+              <span className="text-[8px] sm:text-[10px] font-semibold text-gray-600 uppercase -mt-1">
                 CLOTHES
               </span>
             </Link>
@@ -129,7 +129,7 @@ const Navbar = () => {
             <form
               onSubmit={handleSearchSubmit}
               className={`flex items-center bg-gray-100 rounded-full overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
-                ${isSearchOpen ? "w-40 sm:w-64 px-2" : "w-0 px-0"}
+                ${isSearchOpen ? "w-50 max-md:ms-3 max-md:h-8 sm:w-64 px-2" : "w-0 px-0"}
               `}
             >
               <input
@@ -149,7 +149,7 @@ const Navbar = () => {
               {isSearchOpen ? (
                 <X className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               ) : (
-                <Search className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                <Search className="w-4 h-4 max-md:w-4 max-md:h-4" />
               )}
             </button>
 
@@ -172,7 +172,7 @@ const Navbar = () => {
               className="hidden md:flex relative p-1 sm:p-2 bg-black text-white rounded-full hover:bg-gray-800 transition"
             >
 
-              <Heart className="w-3.5 h-3.5" />
+              <Heart className="w-4 h-4" />
 
               {wishlist.length > 0 && (
                 <span className="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full font-bold">
@@ -187,7 +187,7 @@ const Navbar = () => {
                 onClick={handleLogout}
                 className="hidden md:flex p-1 sm:p-2 bg-black text-white rounded-full hover:bg-gray-800 transition"
               >
-                <LogOutIcon />
+                <LogOutIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </button>
             ) : (
               <button

@@ -31,7 +31,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time (you can adjust)
+    // Simulate loading time
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -43,7 +43,7 @@ const App = () => {
   return (
     <>
      {loading ? (
-      <Loader />   // ⏳ show loader until ready
+      <Loader />   // show loader until ready
     ) : (
       <CartProvider>
         <WishlistProvider>

@@ -4,14 +4,14 @@ import { MapPin, Phone, Mail, Instagram } from "lucide-react";
 const AboutUs = () => {
   const [showMore, setShowMore] = useState(false);
   return (
-    <section className="max-w-[1200px] mx-auto px-6 py-16 mt-16">
+    <section className="max-w-[1200px] mx-auto px-6 max-md:mt-5 py-12 mt-12">
       {/* Title */}
-      <h1 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-600 tracking-widest">
+      <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-red-600 tracking-widest">
         ABOUT US
       </h1>
 
       {/* Brand Story */}
-      <div className="text-center md:text-left mb-25">
+      <div className="text-center md:text-left mb-16">
         <h2 className="text-2xl font-semibold mb-4">Brand Story</h2>
         <p className="text-gray-600 max-w-3xl mx-auto md:mx-0 leading-relaxed">
           At Patel Clothes, we believe true luxury never fades. Each piece is
@@ -43,8 +43,8 @@ const AboutUs = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="text-center mb-18">
-        <h2 className="text-4xl md:text-4xl font-bold mb-18">CONTACT US</h2>
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-4xl font-bold mb-16">CONTACT US</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 justify-items-center">
           {/* Address */}

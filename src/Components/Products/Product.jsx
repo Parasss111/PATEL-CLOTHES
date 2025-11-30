@@ -9,7 +9,7 @@ const Products = () => {
         const { title, subtitle, products } = productCategories[categoryKey];
 
         return (
-            <div className="mt-15">
+            <div className="mt-15 ">
                 <div className="flex justify-between items-center">
                     <h2 className="text-2xl md:text-3xl font-bold">{title}</h2>
 
@@ -47,7 +47,7 @@ const Products = () => {
 
 
     return (
-        <section className="w-full px-4 sm:px-10 md:px-20 mt-35 mb-20">
+        <section className="w-full px-4 sm:px-10 md:px-20 mt-35 max-md:mt-25 max-md:mb-10 mb-20">
             <ProductSection categoryKey="trendingTshirts" />
             <ProductSection categoryKey="oversizedTshirts" />
             <ProductSection categoryKey="trendingShirts" />

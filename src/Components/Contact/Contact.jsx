@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, Instagram } from "lucide-react";
 const Contact = () => {
     return (
         <div>
-            <div className="text-center mt-40 mb-18">
+            <div className="text-center max-md:mt-30 mt-40 mb-18">
                 <h2 className="text-4xl md:text-4xl font-bold mb-18">CONTACT US</h2>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-10 justify-items-center">

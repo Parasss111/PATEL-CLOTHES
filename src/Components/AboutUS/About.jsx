@@ -11,10 +11,10 @@ const About = () => {
     nav("#");
   },[])
   return (
-    <section className="text-gray-800 w-full mt-40">
+    <section className="text-gray-800 w-full mt-40 max-md:mt-25">
 
       {/* Heading */}
-      <div className="text-center mt-20 mb-16 px-4">
+      <div className="text-center max-md:mt-10 mt-20 mb-16 px-4">
         <h1 className="text-4xl font-bold tracking-widest text-[#d3895e]">
           ABOUT US
         </h1>
