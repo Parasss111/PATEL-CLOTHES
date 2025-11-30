@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+/* === ANIMATIONS (keep your current ones as-is) === */
+@keyframes slideInSpring {
+  0% {
+    transform: translateX(-120%) scale(0.95);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(3%) scale(1.02);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideOutSmooth {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-120%) scale(0.95);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInSmooth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-slideInSpring {
+  animation: slideInSpring 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-slideOutSmooth {
+  animation: slideOutSmooth 0.6s ease forwards;
+}
+
+.animate-fadeInSmooth {
+  animation: fadeInSmooth 0.8s ease forwards;
+}
+
+/* === RESPONSIVE DESIGN ENHANCEMENTS === */
+
+/* Mobile-first layout improvements */
+@media (max-width: 640px) {
+  .navbar-container {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Reduce logo and spacing */
+  .navbar-logo span:first-child {
+    font-size: 1.5rem;
+  }
+
+  .navbar-logo span:last-child {
+    font-size: 0.6rem;
+  }
+
+  /* Make search bar full width on mobile */
+  .search-overlay {
+    border-radius: 1rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  /* Icons smaller and closer */
+  .navbar-icons button {
+    padding: 0.5rem;
+  }
+
+  /* Hide navigation links (will add hamburger later if needed) */
+  .navbar-links {
+    display: none !important;
+  }
+}
+
+/* Tablet layout */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .navbar-container {
+    padding: 0.75rem 2rem;
+  }
+
+  .navbar-links a {
+    font-size: 0.95rem;
+    margin: 0 0.75rem;
+  }
+
+  .navbar-icons button {
+    padding: 0.6rem;
+  }
+}
+
+/* Large screen adjustments */
+@media (min-width: 1025px) {
+  .navbar-container {
+    padding: 1rem 3rem;
+  }
+}
+
+
+
+@keyframes slideInSpring {
+  0% {
+    transform: translateX(-120%) scale(0.95);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(3%) scale(1.02);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideOutSmooth {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-120%) scale(0.95);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInSmooth {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-slideInSpring { animation: slideInSpring 0.9s cubic-bezier(0.22,1,0.36,1) forwards; }
+.animate-slideOutSmooth { animation: slideOutSmooth 0.6s ease forwards; }
+.animate-fadeInSmooth { animation: fadeInSmooth 0.8s ease forwards; }
