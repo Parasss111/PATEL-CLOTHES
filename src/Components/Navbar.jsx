@@ -155,7 +155,7 @@ const Navbar = () => {
 
             <button
               onClick={() => navigate("/cart")}
-              className="relative p-1 sm:p-2 bg-black text-white rounded-full hover:bg-gray-800 transition"
+              className="relative p-1 sm:p-2 bg-black text-white rounded-full hover:bg-gray-800 transition hidden"
             >
               <ShoppingCart className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
 
