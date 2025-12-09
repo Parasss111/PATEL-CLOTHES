@@ -1,16 +1,54 @@
-# React + Vite
+# Patel Clothes 🛍️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Patel Clothes** is a React-based e-commerce frontend application for a clothing store.  
+It supports browsing a shopping cart, entering delivery address details, choosing payment method, and placing orders — with form validation using Formik & Yup, and user-friendly notifications using React Toastify.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Features
 
-## React Compiler
+- Add / remove items in cart (via CartContext)  
+- Checkout page with:  
+  - Delivery address form (full name, phone number, address, city, pincode)  
+  - Payment method selection (COD, UPI, Card)  
+  - Order summary (subtotal, (free) delivery charge, total)  
+- Form validation using Yup & Formik:  
+  - Mandatory fields: full name, phone, house/ building, area, city, pincode  
+  - Phone number → must be exactly 10 digits  
+  - Pincode → must be exactly 6 digits  
+  - Visual feedback on invalid fields (red border + error message)  
+  - Auto-scroll and focus to the first invalid field on form submit  
+- Toast notifications for success / errors (via React Toastify)  
+- Responsive, clean UI using Tailwind CSS  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology | Purpose |
+|-----------|---------|
+| React     | Front-end UI library |
+| React Router (v6) | Client-side routing |
+| Context API (`CartContext`) | State management for shopping cart |
+| Formik     | Form state management & handling |
+| Yup        | Schema-based form validation |
+| React Toastify | Notification / toast messages |
+| Tailwind CSS | Styling & layout |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or newer recommended)  
+- npm or yarn  
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/patel-clothes.git
+cd patel-clothes
+npm install
+# or if using yarn:
+# yarn install
